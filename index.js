@@ -1,7 +1,7 @@
 const express = require('express')
 const axios = require('axios');
 const app = express()
-const port = 5000
+const port = process.env.PORT || 5000
 
 app.get('/finance/:code', async (req, res) => {
   try {
