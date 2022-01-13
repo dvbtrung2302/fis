@@ -1,5 +1,5 @@
 const express = require('express');
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 
 // routes
 const financeRoute = require('./routes/finance.route');
@@ -7,7 +7,7 @@ const financeRoute = require('./routes/finance.route');
 const app = express();
 const port = process.env.PORT || 5000
 
-mongoose.connect(process.env.MONGO_URL || "mongodb+srv://dvbt2302:dvbt230220@fis.ierr9.mongodb.net/FIS?retryWrites=true&w=majority");
+// mongoose.connect(process.env.MONGO_URL || "mongodb+srv://dvbt2302:dvbt230220@fis.ierr9.mongodb.net/FIS?retryWrites=true&w=majority");
 
 // app.get('/finance/:code', async (req, res) => {
 //   try {
